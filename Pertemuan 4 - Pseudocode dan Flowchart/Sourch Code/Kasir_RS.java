@@ -16,7 +16,7 @@ public class Kasir_RS{
         String username= input.nextLine();
         System.out.print("Masukan Password: ");
         String password= input.nextLine();
-
+     
         //Deklarasi Password
         if ((username.equals("rscintajava")) && (password.equals("javasejati"))){
         berhasil = true;
@@ -81,7 +81,7 @@ public class Kasir_RS{
         else{
             System.out.println(" ");
             System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++");
-            System.out.println("|               Passwordmu Salah              |");
+            System.out.println("|        Username Atau Passwordmu Salah       |");
             System.out.println("|              Masukan yang Benar             |");
             System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++");       
         }

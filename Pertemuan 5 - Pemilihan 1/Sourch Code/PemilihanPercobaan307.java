@@ -30,6 +30,9 @@ public class PemilihanPercobaan307 {
             hasil = angka1 / angka2;
             System.out.println(angka1 + " / " + angka2 + " = " + hasil);
             break;
+            default:
+            System.out.println("Input Operatormu Salah");
+
         }
     }
 }

@@ -14,10 +14,11 @@ public class PemilihanPercobaan207 {
 
       float total = (uas * 0.4F) + (uts * 0.3F) + (kuis * 0.1F) + (tugas * 0.2F);
 
-      //String message = total < 65 ? "Remidi" : "Tidak Remidi";
-
-      String message = (total > 80 && total <= 100) ? "Sangat Baik" : (total > 73 && total <= 80) ? "Lebih dari Baik" : (total > 65 && total <= 73) ? "Baik" : (total > 60 && total <= 65) ? "Lebih dari Cukup" : (total > 50 && total <= 60) ? "Cukup" : (total > 39 && total <= 50) ? "Kurang" : "Gagal" ;
-      System.out.println("Nilai akhir = " + total + " sehingga anda " + message);
+      String message = (total > 80 && total <= 100) ? "Sangat Baik" : (total > 73 && total <= 80) ? "Lebih dari Baik" :
+      (total > 65 && total <= 73) ? "Baik" : (total > 60 && total <= 65) ? "Lebih dari Cukup" : (total > 50 && total <= 60) ? "Cukup" : 
+      (total > 39 && total <= 50) ? "Kurang" : "Gagal" ;
+      
+      System.out.println("Nilai akhir = " + total + " sehingga nilai anda " + message);
 
     }
 }

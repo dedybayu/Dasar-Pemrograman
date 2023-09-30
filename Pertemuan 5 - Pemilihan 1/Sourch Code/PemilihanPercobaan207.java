@@ -22,11 +22,10 @@ public class PemilihanPercobaan207 {
       (total > 65 && total <= 73) ? "B" : (total > 60 && total <= 65) ? "C+" : (total > 50 && total <= 60) ? "C" : 
       (total > 39 && total <= 50) ? "D" : "E" ;
 
-      String nilaisetara = (total > 80 && total <= 100) ? "4" : (total > 73 && total <= 80) ? "3.5" :
-      (total > 65 && total <= 73) ? "3" : (total > 60 && total <= 65) ? "2.5" : (total > 50 && total <= 60) ? "2" : 
-      (total > 39 && total <= 50) ? "1" : "0" ;
+      float nilaisetara = (total > 80 && total <= 100) ? 4 : (total > 73 && total <= 80) ? 3.5F :
+      (total > 65 && total <= 73) ? 3 : (total > 60 && total <= 65) ? 2.5F : (total > 50 && total <= 60) ? 2 : 
+      (total > 39 && total <= 50) ? 1 : 0 ;
       
-      System.out.println("Nilai akhir = " + total + ", Nilai Huruf : " + nilaihuruf + ", Setara : " + nilaisetara + ", Kualifikasi : " + kualifikasi);
-
+      System.out.println("Nilai akhir = " + total + ", Nilai Huruf: " + nilaihuruf + ", Setara: " + nilaisetara + ", Kualifikasi: " + kualifikasi);
     }
 }

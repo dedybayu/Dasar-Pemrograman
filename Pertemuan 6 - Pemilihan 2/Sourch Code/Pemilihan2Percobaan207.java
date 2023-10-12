@@ -27,7 +27,5 @@ public class Pemilihan2Percobaan207 {
 
         } else
         System.out.println("Bukan Segitiga");
-
-    }
-    
+    }   
 }

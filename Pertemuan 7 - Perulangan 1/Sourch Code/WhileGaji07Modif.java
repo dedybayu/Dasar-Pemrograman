@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class WhileGaji07 {
+public class WhileGaji07Modif {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int jumlahKaryawan, jumlahJamLembur;
@@ -8,19 +8,15 @@ public class WhileGaji07 {
 
         System.out.print("Masukan Jumlah Karyawan : ");
         jumlahKaryawan = scan.nextInt();
+        
         int i = 0;
+
         while (i < jumlahKaryawan) {
             System.out.println("Pilihan Jabatan - Direktur, Manager, Karyawan");
             scan.nextLine(); //BUG Kenapa ini
-            do{
+            
             System.out.print("Masukan Jabatan Karyawan ke-" + (i + 1) + ": ");
             jabatan = scan.nextLine();
-
-            if (!(jabatan.equalsIgnoreCase("direktur") || jabatan.equalsIgnoreCase("manager") || jabatan.equalsIgnoreCase("karyawan"))) {
-                System.out.println("Jabatan invalid");
-            }
-            } while (!(jabatan.equalsIgnoreCase("direktur") || jabatan.equalsIgnoreCase("manager") || jabatan.equalsIgnoreCase("karyawan")));
-
             System.out.print("Masukan Jumlah Jam Lembur  : ");
             jumlahJamLembur = scan.nextInt();
             i++;

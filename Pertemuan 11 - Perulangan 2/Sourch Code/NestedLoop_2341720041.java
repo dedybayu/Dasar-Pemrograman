@@ -27,6 +27,5 @@ public class NestedLoop_2341720041 {
             System.out.println("Rata-Rata suhu kota ke-"+(i+1)+" adalah : "+(float)rataRata[i]+"°C");
             System.out.println(); 
         }
-
     }    
 }

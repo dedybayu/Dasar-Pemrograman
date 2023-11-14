@@ -1,0 +1,94 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Porseni2024 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        // Membuat array untuk menyimpan nama atlet dari berbagai cabang
+        String[][] atlet1 = new String[4][2];
+
+        for (int i = 0; i < atlet1.length; i++) {
+            if (i == 0) {
+                System.out.println("Masukan nama Atlet Badminton");
+            } else if (i == 1) {
+                System.out.println("Masukan nama Atlet Tenis Meja");
+            } else if (i == 2) {
+                System.out.println("Masukan nama Atlet Basket");
+            } else if (i == 3) {
+                System.out.println("Masukan nama Atlet Voly");
+            }
+
+            for (int j = 0; j < atlet1[0].length; j++) {
+                System.out.print("Masukan Atlet ke-" + (j + 1) + " : ");
+                atlet1[i][j] = input.nextLine();
+            }
+            // System.out.println();
+        }
+
+        // String[] atletBadminton = {"Atlet3", "Atlet2", "Atlet1", "Atlet4", "Atlet5"};
+        // String[] atletTenisMeja = {"Atlet1", "Atlet2", "Atlet3", "Atlet4", "Atlet5"};
+        // String[] atletBasket = {"Atlet1", "Atlet2", "Atlet3", "Atlet4", "Atlet5"};
+        // String[] atletBolaVoly = {"Atlet1", "Atlet2", "Atlet3", "Atlet4", "Atlet5"};
+
+        // Mengurutkan nama atlet secara ascending
+        // for (int i = 0; i < atlet1.length; i++) {
+        //     Arrays.sort(atlet1[i]);
+        // }
+
+        for (int i = 0; i < atlet1.length - 1; i++) {
+            for (int j = 0; j < atlet1.length - i - 1; j++) {
+                if (atlet1[j][0].compareTo(atlet1[j + 1][0]) > 0) {
+                    // Swap jika nama atlet sekarang lebih besar dari nama atlet berikutnya
+                    String[] temp = atlet1[j];
+                    atlet1[j] = atlet1[j + 1];
+                    atlet1[j + 1] = temp;
+                }
+            }
+        }
+
+        System.out.println();
+        System.out.println("========================================");
+        System.out.println("|              Daftar Atlet            |");
+        System.out.println("========================================");
+
+        // for (int i = 0; i < atlet1.length; i++) {
+        //     if (i == 0) {
+        //         System.out.println("Atlet Badminton");
+        //     } else if (i == 1) {
+        //         System.out.println("Atlet Tenis Meja");
+        //     } else if (i == 2) {
+        //         System.out.println("Atlet Basket");
+        //     } else if (i == 3) {
+        //         System.out.println("Atlet Voly");
+        //     }
+        //     int j = 1;
+        //     for (String atl : atlet1[i]) {
+        //         System.out.println("1. " + atl);
+        //         j++;
+        //     }
+        //     System.out.println();
+        // }
+
+        // Arrays.sort(atletTenisMeja);
+        // Arrays.sort(atletBasket);
+        // Arrays.sort(atletBolaVoly);
+
+        // Menampilkan informasi nama atlet dari berbagai cabang
+        // System.out.println("Cabang Badminton:");
+
+        // System.out.println("\nCabang Tenis Meja:");
+        // for (String atlet : atletTenisMeja) {
+        // System.out.println(atlet);
+        // }
+
+        // System.out.println("\nCabang Basket:");
+        // for (String atlet : atletBasket) {
+        // System.out.println(atlet);
+        // }
+
+        // System.out.println("\nCabang Bola Voly:");
+        // for (String atlet : atletBolaVoly) {
+        // System.out.println(atlet);
+        // }
+    }
+}

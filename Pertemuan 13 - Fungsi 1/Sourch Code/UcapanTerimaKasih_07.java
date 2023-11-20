@@ -12,8 +12,15 @@ public class UcapanTerimaKasih_07 {
         String nama = PenerimaUcapan();
         System.out.println("\nThank You "+nama+", kamu yang terbaik");
     }
+
+    public static void UcapanTambahan(String ucapanTambahan) {
+        System.out.println("Ucapan Tambahan: " + ucapanTambahan);
+    }
     
     public static void main(String[] args) {
         UcapanTerimaKasih();
+        String tambahan = "Semangat terus yaa";
+        UcapanTambahan(tambahan);
     }
 }
+ 

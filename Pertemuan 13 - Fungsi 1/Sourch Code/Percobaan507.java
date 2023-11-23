@@ -4,7 +4,7 @@ public class Percobaan507 {
         System.out.println("Jumlah argumen/parameter: " + a.length);
 
         for (int i : a){
-            System.out.println(1 + " ");
+            System.out.println(i + " ");
         }
 
         System.out.println();
